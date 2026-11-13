@@ -1,0 +1,82 @@
+# Actividad: Tres cupos, ocho estudiantes
+
+En un curso de programación hay ocho estudiantes y solo tres cupos disponibles para un programa de acompañamiento. El equipo debe usar una IA para proponer quiénes deberían recibirlos.
+
+## Datos del caso ficticio
+*(Las notas van de 0 a 5 y se aprueba con 3,0).*
+
+| Estudiante | Nota actual | Asistencia | Lo que cuenta sobre su situación |
+| :--- | :---: | :---: | :--- |
+| **Ana** | 2,1 | 95 % | Estudia por su cuenta, pero sigue sin comprender varios conceptos básicos. |
+| **Bruno** | 2,8 | 65 % | Sus turnos de trabajo coinciden con algunas clases. |
+| **Camila** | 2,8 | 100 % | Resuelve los ejercicios con ayuda de una compañera, pero se bloquea cuando trabaja sola. |
+| **Diego** | 1,9 | 60 % | Ha faltado para cuidar a un familiar. Quiere continuar, pero se siente muy atrasado. |
+| **Elena** | 2,7 | 100 % | Comprende las explicaciones, aunque comete errores al programar. |
+| **Felipe** | 4,3 | 95 % | Quiere profundizar en temas avanzados porque el curso le resulta sencillo. |
+| **Gabriela** | 2,6 | 80 % | Comparte computador en casa y casi no puede practicar. |
+| **Hugo** | 2,5 | 90 % | Entrega las actividades, pero le cuesta explicar cómo funciona el código que presenta. |
+
+---
+
+## Elección Individual
+
+* **Estudiantes elegidos:** Ana, Diego y Gabriela.
+* **Criterio:** Priorizar a quienes tienen las notas más bajas combinadas con barreras concretas de comprensión, atraso por calamidad doméstica y falta de equipo propio para practicar fuera de clase.
+
+---
+
+## Primera Consulta
+
+### Prompt / Instrucción enviada a la IA
+> Selecciona a los tres estudiantes que más necesitan el acompañamiento. Justifica cada elección y explica por qué dejaste fuera a los demás. *(Incluyendo la tabla de datos del caso).*
+
+### Primera Respuesta
+
+#### ¿A quiénes seleccioné y por qué?
+
+| Estudiante | Justificación |
+| :--- | :--- |
+| **Ana** | Tiene una nota de 2,1 y una asistencia del 95 %. Aunque estudia por su cuenta, continúa sin comprender varios conceptos básicos. Esto indica que necesita una orientación diferente para superar sus dificultades. |
+| **Diego** | Tiene la nota más baja (1,9) y una asistencia del 60 %. Además, ha faltado para cuidar a un familiar y manifiesta sentirse muy atrasado. Necesita apoyo académico que tenga en cuenta sus circunstancias. |
+| **Gabriela** | Tiene una nota de 2,6 y una asistencia del 80 %. Comparte el computador en casa y casi no puede practicar. Esta limitación puede dificultar el desarrollo de sus habilidades de programación. |
+
+* **¿Por qué estos tres?** Porque combinan dificultades académicas con obstáculos concretos para aprender. El acompañamiento podría ayudarles a comprender los conceptos, recuperar el ritmo del curso y disponer de mejores oportunidades para practicar.
+* **¿Por qué quedaron fuera los demás?**
+  * **Felipe (4,3):** Ya supera con amplitud la nota mínima de aprobación y busca profundización avanzada, no nivelación.
+  * **Bruno (2,8) y Elena (2,7):** Están muy cerca del 3,0 y comprenden los temas base (Elena solo requiere pulir errores de sintaxis/práctica y Bruno tiene un choque de horario laboral).
+  * **Camila (2,8) y Hugo (2,5):** Aunque necesitan ganar autonomía o dominio conceptual, sus notas son más altas frente a quienes tienen bloqueos fundamentales o falta de equipo.
+
+### Observaciones de la Primera Consulta
+* **¿Qué interpreté por "necesitar acompañamiento"?** Lo interpreté como la necesidad de apoyo adicional para comprender programación, mejorar las notas y superar dificultades de aprendizaje.
+* **¿Qué datos utilicé y cuáles dejé en segundo plano?** Consideré principalmente las notas, la asistencia y las dificultades personales y académicas. No me basé únicamente en las calificaciones.
+* **¿Di por cierto algo que la tabla no dice?** Sí. Supuse que el acompañamiento ayudaría a superar las dificultades, pero sin conocer todavía el formato, duración ni recursos del programa.
+* **¿Pedí información adicional?** No para la selección inicial. Sin embargo, preguntaría por las dificultades específicas de aprendizaje, los horarios disponibles y el acceso a recursos para practicar.
+* **Conclusión parcial:** La IA puede ayudar a organizar la información y proponer candidatos, pero es importante reconocer sus limitaciones y tomar decisiones justas según las necesidades reales de cada estudiante.
+
+---
+
+## Segunda Consulta (Con contexto del programa)
+
+### Información adicional sobre el programa
+> **PROGRAMA A: Preparación para el examen**  
+> Dos sesiones de dos horas antes del examen de la próxima semana. El propósito es apoyar a estudiantes para que alcancen la nota mínima de aprobación: 3,0. Los ocho estudiantes pueden asistir a las dos sesiones. Hay computadores disponibles durante las sesiones. No hay préstamo de equipos ni acompañamiento después del examen.
+
+### Segunda Respuesta
+
+#### Estudiantes seleccionados
+1. **Diego (1,9):** Tiene la nota más baja, una asistencia del 60 % y manifiesta sentirse muy atrasado. El acompañamiento puede ayudarlo a repasar los conceptos fundamentales antes del examen.
+2. **Ana (2,1):** Aunque asiste al 95 % de las clases y estudia por su cuenta, todavía no comprende varios conceptos básicos. Necesita reforzar esos conocimientos para intentar alcanzar la nota mínima.
+3. **Hugo (2,5):** Tiene una nota inferior a 3,0 y, aunque entrega las actividades, le cuesta explicar cómo funciona el código que presenta. Las sesiones pueden ayudarlo a fortalecer su comprensión real y prepararse para la evaluación individual.
+
+---
+
+## Comparación y Conclusión Final
+
+### Comparación entre ambas selecciones
+Sí, la selección cambió. Inicialmente se eligió a **Ana, Diego y Gabriela**, teniendo en cuenta sus dificultades académicas y las barreras que enfrentaban para aprender programación. Sin embargo, al conocer las condiciones del **Programa A**, se reemplazó a **Gabriela** por **Hugo**.
+
+* **Criterio que produjo el cambio:** La duración corta del programa (dos sesiones de dos horas enfocadas en aprobar el examen) y la falta de préstamo de equipos fuera de clase. Aunque hay computadores durante las sesiones, el problema estructural de Gabriela es no tener equipo en casa para practicar a largo plazo. En cambio, Hugo presenta un vacío crítico de comprensión (no logra explicar su propio código) y tiene la tercera nota más baja (2,5), por lo que un refuerzo intensivo previo al examen tiene mayor impacto directo en su aprobación.
+* **Selección final:** **Diego, Ana y Hugo**, porque presentan las notas más bajas (1,9, 2,1 y 2,5) y vacíos conceptuales directos que pueden abordarse en sesiones intensivas orientadas a alcanzar el 3,0 en el examen.
+
+### Conclusión
+Para que la IA hiciera una selección acorde con el programa, era necesario definir claramente su propósito, la duración de las sesiones, los recursos disponibles y las limitaciones del apoyo. En la primera consulta, la selección priorizó dificultades académicas junto con barreras externas; en la segunda, al acotar el objetivo a aprobar un examen la próxima semana en dos sesiones de dos horas, Gabriela fue reemplazada por Hugo para atacar directamente los vacíos de comprensión de código. Esto demuestra que la calidad de una recomendación de IA depende directamente del contexto y los criterios precisos que le proporcionamos.
