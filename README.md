@@ -2,6 +2,17 @@
 
 Laboratorio web de ingeniería con generación de geometrías reales, construcción por etapas, simulación numérica y comparación A/B.
 
+## Autoría y organización del proyecto
+
+La página **SismoTwin 4D** fue desarrollada como un trabajo en equipo autorizado por el **TL Angelo**. El grupo está conformado por:
+
+* **Dahiana Diez (Titular del proyecto):** Es la dueña principal del proyecto, ya que la página se creó y desarrolló directamente desde su computador personal.
+* **Esneider Muñoz, Francisco Salgado y Santiago Arboleda:** Participamos aportando y uniendo ideas para decidir qué rumbo tomar y cómo desarrollar el proyecto.
+
+**Aclaración sobre el repositorio:** Por este motivo, el repositorio de Dahiana Diez aparece clonado dentro de mi cuenta personal de GitHub (`salgadofrancisco920`). Además, dentro de ese mismo espacio aparece una carpeta llamada **`3-cupos`**, la cual es totalmente mía: corresponde a una actividad anterior de IA que hice por mi cuenta y decidí incluirla allí simplemente para tener todos mis trabajos de IA guardados en un solo lugar.
+
+---
+
 ## Iniciar
 
 Requisitos: Node.js 18 o superior.
